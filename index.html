@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style2.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Patrick+Hand|Roboto:400,700');
+        .campaign h1,
+        .campaign h2,
+        .campaign h3 {
+            margin: 0;
+        }
+
+        img:hover {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+
+        .homepage-text {
+            position: absolute;
+            left: 16%;
+            top: 0%;
+            color: #FF3D5B;
+            font-family: 'Patrick Hand', cursive;
+        }
+
+        .homepage-text h2,
+        .homepage-text h3 {
+            margin: 0;
+        }
+
+        .homepage-text h2 {
+            font-size: 8em;
+        }
+
+        .homepage-text h3 {
+            font-size: 6em;
+        }
+
+        .btn.home-btn {
+            position: absolute;
+            left: 1%;
+            height: 60px;
+            background: none;
+            color: #fff;
+            font-size: 25px;
+            border: 2px solid #fff;
+            padding: 10px 10px;
+            bottom: 5%;
+        }
+
+        .banner-image1 {
+            position: absolute;
+            bottom: 50%;
+            right: 0%;
+            width: 25%;
+            padding: 15px;
+        }
+
+        .banner-image2 {
+            position: absolute;
+            bottom: 48%;
+            right: 20%;
+            width: 25%;
+            padding: 20px;
+        }
+
+        .price {
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .btn.btn-special {
+            margin-top: 10px;
+            background-color: #3ABDB7;
+            border-radius: 3px;
+            border: none;
+            font-size: 25px;
+            line-height: 1;
+            padding: 20px 10px 0px !important;
+            height: 90px;
+            font-weight: bold;
+        }
+
+        .btn.btn-special span.subtext {
+            font-size: 18px;
+        }
+
+        .btn.btn-special:hover {
+            background-color: #3AcBB7;
+            border: none;
+            color: #fff;
+        }
+
+        .text-part {
+            padding: 2% 5% 5%;
+        }
+
+        .text-part h1 {
+            font-family: 'Patrick Hand', cursive;
+            color: #3ABDB7;
+            text-align: center;
+        }
+
+        .text-part h1 span {
+            font-size: 52px;
+        }
+
+        .text-part h3 {
+  
+            line-height: 2;
+  
+            text-align: center;
+  
+            font-size: 22px;
+        }
+
+        .banner-home-top.fullwidth img {
+  
+            width: 100%;
+  
+            max-height: 500px;
+        }
+
+        .text-container {
+  
+            background-color: #3ABDB7;
+  
+            color: #fff;
+  
+            text-align: center;
+  
+            padding: 30px 10%;
+        }
+
+        .text-container h1 {
+  
+            text-transform: uppercase;
+  
+            border: 4px solid #fff;
+  
+            padding: 10px 20px;
+  
+            color: #fff;
+  
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .section3 {
+            font-family: 'Patrick Hand', cursive;
+  
+            margin: 5% 0;
+  
+            background-repeat: no-repeat;
+  
+            background-size: 100% 100%;
+  
+            background-position: center;
+  
+        }
+
+        .section3 h2,
+  
+        .section3 h3 {
+  
+            font-size: 3em;
+  
+            margin: 0;
+  
+            background-image: url('https://cdn.shopify.com/s/files/1/0703/0155/files/text-bg-blue.png?2051');
+  
+            background-repeat: no-repeat;
+  
+            padding: 30px;
+  
+            color: #fff;
+  
+            text-align: center;
+  
+            background-size: 100% 100%;
+  
+            background-position: center;
+        }
+
+        .section3 h2 {
+            background-image: url('https://cdn.shopify.com/s/files/1/0703/0155/files/text-bg-aqua.png?2071');
+        }
+
+        .section3 h3 {
+  
+            color: #fff;
+  
+        }
+
+        .section3 h2 {
+  
+            color: #000;
+  
+        }
+
+        .section3 h1 {
+  
+            font-size: 3em;
+  
+            text-align: left;
+  
+            color: #3ABDB7;
+        }
+
+        .text-sectio3--one {
+            position: absolute;
+            top: 0%;
+            left: 20%;
+        }
+
+        .text-sectio3--one h2 {
+            -moz-transform: rotate(-5deg);
+
+            -webkit-transform: rotate(-5deg);
+
+            -o-transform: rotate(-5deg);
+
+            -ms-transform: rotate(-5deg);
+
+            transform: rotate(-5deg);
+        }
+
+        .text-sectio3--one h3 {
+
+            -moz-transform: rotate(-1deg);
+
+            -webkit-transform: rotate(-1deg);
+
+            -o-transform: rotate(-1deg);
+
+            -ms-transform: rotate(-1deg);
+
+            transform: rotate(-1deg);
+
+            transform: translate(80%, -28%);
+
+        }
+
+        .text-section3--two {
+            position: absolute;
+
+            top: 33%;
+
+            right: 0%;
+        }
+
+        .text-container__two {
+
+            background-color: #FF3D5B;
+
+            text-align: center;
+
+            padding: 20px 15% 20px;
+
+        }
+
+        .text-container__two h1 {
+
+            text-transform: uppercase;
+
+            color: #fff;
+
+            border: 4px solid #fff;
+
+            padding: 10px 20px;
+
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .section5 {
+
+            background-image: url('https://cdn.shopify.com/s/files/1/0703/0155/files/fullwidth_img2.jpg?2069');
+
+            background-repeat: no-repeat;
+
+            background-size: 100% 65.5%;
+
+        }
+
+        .section5 .widget-product {
+
+            margin: 10% 5%;
+
+        }
+
+        .section5 .lady-img {
+
+            margin: -16% 0% 0 0;
+
+        }
+
+        .section5 .lady-img img {
+
+            width: 100%;
+
+        }
+
+        .section5 h1 {
+
+            font-family: 'Roboto', sans-serif;
+
+            padding: 40px;
+
+            text-align: right;
+
+            color: #fff;
+
+            background-color: #3ABDB7;
+
+            font-size: 3em;
+        }
+
+        .section5 h2 {
+
+            text-align: center;
+
+            font-family: 'Patrick Hand', cursive;
+
+            color: #fff;
+
+            padding: 20px 40px;
+
+            border: 6px solid #fff;
+
+            border-radius: 5px;
+
+            font-size: 6em;
+        }
+
+        .section5 .first-product {
+
+            margin: 42% 0 0;
+  
+            padding: 50px;
+  
+            border-top: none;
+
+        }
+
+ 
+        .section5 .second-product {
+ 
+            margin: 18% 0 0;
+ 
+            border: 6px solid #fff;
+ 
+            padding: 20px;
+                    }
+  
+        .blue_jolyn img {
+  
+            width: 100%;
+  
+        }
+  
+        .img_part--one,
+  
+        .img_part--two {
+ 
+            background: none repeat scroll 0 0 #ddd;
+ 
+            border: 1px solid #E8E7E7;
+    
+            box-shadow: 0 0 3px #CCCCCC;
+    
+            display: block;
+    
+            padding: 13px;
+    
+            position: relative;
+    
+            z-index: 9;
+        }
+
+        .img_part--one {
+    
+            width: 500px;
+    
+            -moz-transform: rotate(-5deg);
+    
+            -webkit-transform: rotate(-5deg);
+    
+            -o-transform: rotate(-5deg);
+    
+            -ms-transform: rotate(-5deg);
+    
+            transform: rotate(-5deg);
+        }
+        .img_part--two {
+    
+            width: 400px;
+    
+            -moz-transform: rotate(4deg);
+    
+            -webkit-transform: rotate(4deg);
+    
+            -o-transform: rotate(4deg);
+    
+            -ms-transform: rotate(4deg);
+    
+            transform: rotate(4deg);
+
+        }
+
+        .text_one,
+    
+        .text_two {
+    
+            padding: 10px;
+
+        }
+
+        .two_parts,
+  
+        .text_design {
+  
+            font-family: 'Patrick Hand', cursive;
+  
+            color: #fff;
+        }
+
+        .two_parts h2 {
+  
+            font-size: 3.5em;
+  
+            -moz-transform: rotate(-3deg);
+  
+            -webkit-transform: rotate(-3deg);
+  
+            -o-transform: rotate(-3deg);
+  
+            -ms-transform: rotate(-3deg);
+  
+            transform: rotate(-3deg);
+        }
+
+        .two_parts h3 {
+    
+            font-size: 3em;
+    
+            color: #3ABDB7;
+    
+            -moz-transform: rotate(-3deg);
+    
+            -webkit-transform: rotate(-3deg);
+    
+            -o-transform: rotate(-3deg);
+    
+            -ms-transform: rotate(-3deg);
+    
+            transform: rotate(-3deg);
+        }
+
+        .text_one h2,
+  
+        .text_two h3 {
+ 
+            font-size: 4em;
+ 
+            font-family: 'Patrick Hand', cursive;
+ 
+            color: #fff;
+ 
+            background-image: url('https://cdn.shopify.com/s/files/1/0703/0155/files/text-bg-blue.png?2051');
+ 
+            background-repeat: no-repeat;
+ 
+            padding: 40px;
+        }
+
+
+        .text_two h1 {
+  
+ 
+            background-image: url('https://cdn.shopify.com/s/files/1/0703/0155/files/text-bg-red.png?2052');
+ 
+            background-size: 100% 100%;
+ 
+            background-repeat: no-repeat;
+ 
+            margin-top: 12%;
+ 
+            padding: 30px;
+ 
+            text-align: center;
+ 
+            font-size: 5em;
+ 
+            margin-bottom: 0;
+ 
+            background-position: right;
+ 
+            -moz-transform: rotate(1deg);
+ 
+            -webkit-transform: rotate(1deg);
+ 
+            -o-transform: rotate(1deg);
+ 
+            -ms-transform: rotate(1deg);
+ 
+            transform: rotate(1deg);
+        }
+
+        .text_three h2 {
+
+ 
+            background-image: url('https://cdn.shopify.com/s/files/1/0703/0155/files/text-bg-aqua.png?2071');
+ 
+            background-repeat: no-repeat;
+ 
+            background-size: 100% 100%;
+ 
+            margin-top: -8%;
+ 
+            padding: 40px;
+ 
+            font-size: 3em;
+ 
+            color: #000;
+ 
+            font-family: 'Patrick Hand', cursive;
+ 
+            -moz-transform: rotate(2deg);
+ 
+            -webkit-transform: rotate(2deg);
+ 
+            -o-transform: rotate(2deg);
+ 
+            -ms-transform: rotate(2deg);
+            transform: rotate(2deg);
+        }
+
+        .text_design h1 {
+ 
+            text-align: left;
+ 
+            background-image: url('https://cdn.shopify.com/s/files/1/0703/0155/files/text-bg-blue.png?2051');
+ 
+            background-repeat: no-repeat;
+ 
+            background-position: left;
+ 
+            background-size: 33% 100%;
+ 
+            padding: 30px 20px;
+ 
+            -moz-transform: rotate(-1deg);
+ 
+            -webkit-transform: rotate(-1deg);
+ 
+            -o-transform: rotate(-1deg);
+ 
+            -ms-transform: rotate(-1deg);
+ 
+            transform: rotate(-1deg);
+        }
+
+        .text_design h2 {
+ 
+            margin: -1.5% 0 0 -25%;
+ 
+            text-align: center;
+ 
+            background-image: url('https://cdn.shopify.com/s/files/1/0703/0155/files/text-bg-aqua.png?2071');
+ 
+            background-repeat: no-repeat;
+ 
+            background-position: center;
+ 
+            background-size: 30% 100%;
+ 
+            padding: 30px;
+ 
+            color: #000;
+ 
+            -moz-transform: rotate(5deg);
+ 
+            -webkit-transform: rotate(5deg);
+ 
+            -o-transform: rotate(5deg);
+ 
+            -ms-transform: rotate(5deg);
+ 
+            transform: rotate(5deg);
+        }
+
+        .text_design h3 {
+ 
+            font-size: 4em;
+ 
+            text-align: right;
+ 
+            color: #3ABDB7;
+ 
+            -moz-transform: rotate(1deg);
+ 
+            -webkit-transform: rotate(1deg);
+ 
+            -o-transform: rotate(1deg);
+ 
+            -ms-transform: rotate(1deg);
+ 
+            transform: rotate(1deg);
+        }
+
+        .text_design h3 span {
+            font-size: 2em;
+
+        }
+
+        .text_one h2 {
+            background-size: 100% 100%;
+        }
+
+        .text_two h3 {
+ 
+            background-image: url('https://cdn.shopify.com/s/files/1/0703/0155/files/text-bg-big-blue.png?2072');
+ 
+            background-size: 100% 100%;
+ 
+            background-position: right;
+ 
+            font-size: 3em;
+ 
+            text-align: right;
+ 
+            margin-top: 10%;
+ 
+            -moz-transform: rotate(-4deg);
+ 
+            -webkit-transform: rotate(-4deg);
+ 
+            -o-transform: rotate(-4deg);
+ 
+ 
+             -ms-transform: rotate(-4deg);
+ 
+            transform: rotate(-4deg);
+        }
+
+        .last_part {
+ 
+            text-align: center;
+ 
+            font-family: 'Patrick Hand', cursive;
+ 
+            color: #3AcBB7;
+ 
+            padding: 5%;
+        }
+
+        .last_part h1 {
+ 
+            font-size: 8em;
+        }
+
+        .last_part h3 {
+ 
+            line-height: 1;
+ 
+            font-size: 4em;
+        }
+
+        .last_cta {
+ 
+            padding: 30px;
+ 
+            font-size: 7em;
+ 
+            border-radius: 10px;
+ 
+            font-family: 'Patrick Hand', cursive;
+ 
+            border: 6px solid #FF3D5B;
+ 
+            color: #FF3D5B;
+ 
+            margin: auto;
+        }
+
+        a:hover,
+ 
+        a:focus {
+ 
+            color: inherit;
+ 
+            text-decoration: none;
+        }
+
+        .bottom_cta {
+ 
+            text-align: center;
+ 
+            padding: 5%;
+        }
+
+        @media (max-width: 1024px) {
+ 
+            .section5 .lady-img {
+ 
+                margin: 2% 0% 0 0;
+            }
+
+            .section5 h2 {
+ 
+                font-size: 4.5em;
+ 
+                padding: 28px 20px;
+            }
+
+            .text_design h2 {
+ 
+                margin: 0;
+ 
+                background-size: 60% 100%;
+            }
+
+            .text_design h1 {
+ 
+                margin: 0;
+ 
+                background-size: 43% 100%;
+            }
+
+            .last_cta {
+ 
+                padding: 20px;
+ 
+                font-size: 4em;
+            }
+
+            .products-grid .grid-item {
+ 
+                padding-bottom: 10px;
+            }
+
+            .img_part--one,
+ 
+            .img_part--two {
+ 
+                max-width: 300px;
+            }
+
+            .text_one h2,
+ 
+            .two_parts h3,
+ 
+            .text_two h3 {
+ 
+                clear: both;
+ 
+                font-size: 2.5em;
+ 
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+ 
+            .homepage-text h2 {
+ 
+                font-size: 2.5em;
+ 
+                line-height: 1;
+            }
+
+            .homepage-text h3 {
+ 
+                font-size: 2em;
+ 
+                line-height: 1;
+            }
+
+            .text_one,
+ 
+            .text_two {
+ 
+                clear: both;
+                /* width: 100%; */
+            }
+
+            .text_three h2 {
+ 
+                margin: 0;
+            }
+
+            .text_design h1,
+
+            .text_design h2 {
+
+                background-size: 100% 100%;
+            }
+
+            .text_design h2 {
+                margin: 0;
+
+                -moz-transform: rotate(0deg);
+
+                -webkit-transform: rotate(0deg);
+
+                -o-transform: rotate(0deg);
+
+                -ms-transform: rotate(0deg);
+
+                transform: rotate(0deg);
+            }
+
+            .text_design h3 {
+
+                font-size: 2em;
+
+                text-align: center;
+            }
+
+            .text_design h3 span {
+
+                font-size: 1.5em;
+            }
+
+            .section5 {
+                background: none;
+            }
+
+            .section5 h2 {
+
+                border: 4px solid #FF3D5B;
+
+                color: #FF3D5B;
+
+                font-size: 3em;
+            }
+
+            .section5 h1 {
+
+                padding: 10px;
+
+                text-align: center;
+
+                font-size: 2.5em;
+            }
+
+
+            .section5 .widget-product,
+
+            .section5 .lady-img,
+
+            .section5 .second-product,
+
+            .section5 .first-product {
+
+                margin: 0;
+
+                padding: 0px;
+
+                border: none;
+
+            }
+
+            .text_one h2,
+
+            .text_two h3 {
+
+                background-size: 100% 100%;
+            }
+
+            .img_part--one,
+
+            .img_part--two {
+
+                margin: 0px;
+
+                width: 100%;
+
+                max-width: 400px;
+            }
+
+            .last_cta {
+
+                padding: 10px;
+
+                font-size: 2.5em;
+            }
+
+            .last_part h1 {
+                font-size: 3em;
+
+            }
+
+            .last_part h3 {
+
+                font-size: 2em;
+
+            }
+
+        }
+    </style>
+
+    <div class="container-fluid campaign">
+
+        <div class="home-slideshow row ">
+
+            <div class="variable-width1">
+
+                <a href="https://aus.jolynclothing.com/collections/new-stuff">
+
+                    <div class=" "><img src="https://cdn.shopify.com/s/files/1/0703/0155/files/jolynshoot-24.png?
+                    2056" alt="" width="100%" />
+
+                        <div class="homepage-text">
+
+                            <h2>SUITE UP</h2>
+
+                            <h3>for your best</h3>
+
+                            <h2>YEAR YET!</h2>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="row text-container"><a href="https://aus.jolynclothing.com/collections/new-stuff">
+
+                <h1>Checkout our Newest Collection</h1>
+
+            </a></div>
+
+        <div class="row section3">
+
+            <div class="col-sm-offset-1 col-sm-11 hidden-xs  "><a
+  
+                href="https://aus.jolynclothing.com/collections/pinks/products/contrast-tully-tie-back-onesie-papaya-black?variant=8192020250725"><img
+                        src="https://cdn.shopify.com/s/files/1/0703/0155/files/ladywithboats_6b7d5a9b-1fdb-4315-bf03-d4804f97108c.png?2057"
+                        width="100%" alt="" /></a>
+ 
+                        <div class="text-sectio3--one">
+
+                    <h2>these are suits that</h2>
+
+                    <h3>can keep up with you</h3>
+
+                </div>
+
+                <div class="text-section3--two">
+
+                    <h1>by land, <br />by sea, <br /> or on the lounge</h1>
+
+                </div>
+
+            </div>
+
+            <div class=" col-xs-12 hidden-md hidden-lg hidden-sm">
+
+                <div class="text-sectio3--mobileone">
+
+                    <h2>these are suits that</h2>
+
+                    <h3>can keep up with you</h3>
+
+                </div>
+
+                <a
+                    href="https://aus.jolynclothing.com/collections/pinks/products/contrast-tully-tie-back-onesie-papaya-black?variant=8192020250725"><img
+                        src="https://cdn.shopify.com/s/files/1/0703/0155/files/ladywithboats_6b7d5a9b-1fdb-4315-bf03-d4804f97108c.png?2057"
+                        width="100%" alt="" /></a>
+                <div class="text-section3--mobiletwo">
+
+                    <h1>by land, <br />by sea, <br /> or on the lounge</h1>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <div class="widget-product">
+
+                <div class="products-grid row">
+
+                    <div class=" crop_image grid-item col-sm-offset-3 col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+                        <div class="inner product-item  wow" data-wow-delay="60ms" id="product-30244634642">
+
+                            <div class="inner-top">
+
+                                <div class="product-top">
+
+                                    <div class="product-image"><a
+                                            href="https://aus.jolynclothing.com/products/contrast-julian-fixed-back-onesie-strawberry-lavender?variant=18443179360318"
+                                            class="product-grid-image"> <img
+                                                src="https://cdn.shopify.com/s/files/1/0703/0155/products/JULIAN-STRAWLV-S-011019_grande_787dea12-a146-41a2-bf2d-daf5256a035c_1024x1024.jpg?v=1547610290"
+                                                alt="Contrast julian fixed-back onesie -strawberry/lavender"
+                                                width="100%" />
+                                        </a></div>
+                                </div>
+
+                                <div class="product-bottom"><a class="product-title"
+ 
+                                    href="https://aus.jolynclothing.com/products/contrast-julian-fixed-back-onesie-strawberry-lavender?variant=18443179360318">
+                                        Contrast julian fixed-back onesie -strawberry/lavender</a>
+ 
+                                        <div class="price-box">
+ 
+                                            <p class="regular-product"><span>$40.00</span></p>
+ 
+                                        </div>
+ 
+                                        <a class="btn  "
+                                        href="https://aus.jolynclothing.com/products/contrast-julian-fixed-back-onesie-strawberry-lavender?variant=18443179360318">
+                                        <span>Shop Now</span> </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class=" crop_image grid-item  col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+                        <div class="inner product-item  wow" data-wow-delay="60ms" id="product-30244634642">
+
+                            <div class="inner-top">
+
+                                <div class="product-top">
+
+                                    <div class="product-image"><a
+                                            href="https://aus.jolynclothing.com/products/soren-tie-back-onesie-french-mulberry?variant=45244195858"
+                                            class="product-grid-image"> <img
+                                                src="https://cdn.shopify.com/s/files/1/0703/0155/products/SFW-092517-SOREN-FM-F_grande_ffba1fe8-3f81-4e26-8a56-038e76dbaf43_1024x1024.jpg?v=1506715092"
+                                                alt="Contrast julian fixed-back onesie -strawberry/lavender"
+                                                width="100%" />
+                                        </a></div>
+ 
+                                    </div>
+
+                                <div class="product-bottom"><a class="product-title"
+                                        href="https://aus.jolynclothing.com/products/products/soren-tie-back-onesie-french-mulberry?variant=45244195858">
+                                        Soren Tie-Back Onesie - French Mulberry</a>
+
+                                    <div class="price-box">
+
+                                        <p class="regular-product"><span>$40.00</span></p>
+
+                                    </div>
+
+                                    <a class="btn  "
+                                        href="https://aus.jolynclothing.com/products/soren-tie-back-onesie-french-mulberry?variant=45244195858">
+                                        <span>Shop Now</span> </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row section5"><br />
+
+            <h1>Keep an Eye on our separates</h1>
+
+            <div class="col-sm-5 col-xs-12 lady-img"><img
+                    src="https://cdn.shopify.com/s/files/1/0703/0155/files/lady.png?2070" alt="" /></div>
+
+  
+                    <div class=" col-sm-7 col-xs-12"><br /> <a href="https://aus.jolynclothing.com/collections/new-stuff"
+                    target="_blank" rel="noopener noreferrer">
+                    <h2>CHECK THEM OUT <br /> FOR YOURSELF!</h2>
+                </a>
+
+                <div class="row">
+
+                    <div class="widget-product">
+
+                        <div class="products-grid row">
+
+                            <div class=" crop_image grid-item col-xs-6  col-sm-6 first-product">
+ 
+                                <div class="inner product-item  wow" data-wow-delay="60ms" id="product-30244634642">
+ 
+                                    <div class="inner-top">
+ 
+                                        <div class="product-top">
+ 
+                                            <div class="product-image"><a
+                                                    href="https://aus.jolynclothing.com/products/euro-bottoms-strawberry?variant=3829836485"
+                                                    class="product-grid-image"> <img
+                                                        src="https://cdn.shopify.com/s/files/1/0703/0155/products/SFW-VENT-STRAWBERRY-BIKINI-SURF_1024x1024.jpeg?v=1511855872"
+                                                        alt="Europe Bottom - Strawberry" width="100%" /> </a></div>
+                                        </div>
+
+                                        <div class="product-bottom"><a class="product-title"
+                                                href="https://aus.jolynclothing.com/products/euro-bottoms-strawberry?variant=3829836485">
+                                                Europe Bottom - Strawberry</a>
+
+                                            <div class="price-box">
+                                                <p class="regular-product"><span>$40.00</span></p>
+                                            </div>
+                                            <a class="btn  "
+                                                href="https://aus.jolynclothing.com/products/euro-bottoms-strawberry?variant=3829836485">
+                                                <span>Shop Now</span> </a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class=" crop_image grid-item second-product col-xs-6 col-sm-5 col-md-5 col-lg-5">
+ 
+                                <div class="inner product-item  wow" data-wow-delay="60ms" id="product-30244634642">
+ 
+                                    <div class="inner-top">
+ 
+                                        <div class="product-top">
+ 
+                                            <div class="product-image"><a
+                                                    href="https://aus.jolynclothing.com/products/triangle-tops-strawberry?variant=3830624709"
+                                                    class="product-grid-image"> <img
+                                                        src="https://cdn.shopify.com/s/files/1/0703/0155/products/sfw-4315-straw-tri_1024x1024.jpeg?v=1511855821"
+                                                        alt="Triangle Top - Strawberry" width="100%" /> </a></div>
+                                        </div>
+  
+                                        <div class="product-bottom"><a class="product-title"
+                                                href="https://aus.jolynclothing.com/products/triangle-tops-strawberry?variant=3830624709">
+                                                Triangle Top - Strawberry</a>
+  
+                                                <div class="price-box">
+ 
+                                                <p class="regular-product"><span>$80.00</span></p>
+ 
+                                            </div>
+ 
+                                            <a class="btn  "
+                                                href="https://aus.jolynclothing.com/products/triangle-tops-strawberry?variant=3830624709">
+                                                <span>Shop Now</span> </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row text_design">
+
+            <h1>The cuts are clean and classic,</h1>
+
+            <h2>and the oh-so eye-popping detailing</h2>
+
+            <h3>makes <span>JOLYN</span> suits totally next-level</h3>
+
+        </div>
+
+        <div class="row blue_jolyn">
+
+            <div class="col-sm-offset-1 col-sm-3"><a href="https://aus.jolynclothing.com/products/vent-tops-ocean"
+ 
+                target="_blank" rel="noopener noreferrer"> <img
+ 
+                src="https://cdn.shopify.com/s/files/1/0703/0155/products/BALI-OCN-F_grande_99ee2c96-0303-4e3a-87fa-b0f5eb3328bd_1024x1024.jpeg?v=1538977786"
+                        alt="" /> </a></div>
+ 
+                        <div class="col-sm-3"><a href="https://aus.jolynclothing.com/products/midl-bottom-ocean" target="_blank"
+                    rel="noopener noreferrer"> <img
+                        src="https://cdn.shopify.com/s/files/1/0703/0155/products/BALI-OCN-B_grande_c8419bc9-8d56-4abf-be4c-348f91401651_1024x1024.jpeg?v=1538977795"
+                        alt="" /> </a></div>
+ 
+                        <div class="col-sm-3"><a href="https://aus.jolynclothing.com/products/harrison-top-ocean" target="_blank"
+                    rel="noopener noreferrer"> <img
+                        src="https://cdn.shopify.com/s/files/1/0703/0155/files/ocean1.jpeg?2058" alt="" /> </a></div>
+        </div>
+
+        <div class="row text-container__two">
+
+            <h1>Shop the look</h1>
+
+        </div>
+
+        <div class="widget-product">
+
+            <div class="products-grid row">
+
+                <div class=" crop_image grid-item col-xs-6 col-sm-offset-1 col-sm-3 ">
+
+                    <div class="inner product-item  wow" data-wow-delay="0ms" id="product-1213657605">
+
+                        <div class="inner-top">
+
+                            <div class="product-top">
+
+                                <div class="product-image"><a
+                                        href="https://aus.jolynclothing.com/products/vent-tops-ocean?variant=3830665477"
+                                        class="product-grid-image"><img
+                                            src="https://cdn.shopify.com/s/files/1/0703/0155/products/SFW-jolyn-vet-top-ocean_grande_f38eb41e-f278-4d4f-9953-429d25eb16e0_1024x1024.jpg?v=1506647664"
+                                            alt="Vent Top - Ocean " width="100%" /> </a></div>
+                            </div>
+
+                            <div class="product-bottom"><a class="product-title"
+                                    href="https://aus.jolynclothing.com/products/vent-tops-ocean?variant=3830665477">
+
+                                    Vent Top - Ocean </a>
+
+                                <div class="price-box">
+
+                                    <p class="regular-product"><span>$40.00</span></p>
+
+                                </div>
+
+                                <a class="btn "
+                                    href="https://aus.jolynclothing.com/products/vent-tops-ocean?variant=3830665477">
+                                    <span>Shop Now</span> </a>
+                            </div>
+ 
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class=" crop_image grid-item col-xs-6 col-sm-3">
+
+                    <div class="inner product-item  wow " data-wow-delay="20ms" id="product-5951838021">
+
+                        <div class="inner-top">
+
+                            <div class="product-top">
+
+                                <div class="product-image"><a
+                                        href="https://aus.jolynclothing.com/products/harrison-top-ocean?variant=1261778075666"
+                                        class="product-grid-image"> <img
+                                            src="https://cdn.shopify.com/s/files/1/0703/0155/products/HARRISON-OCN-F-010918_grande_1e4a9510-6bd7-4d1a-a877-9b5c6a3a31d0_1024x1024.jpg?v=1516750050"
+                                            alt=" Harrison Top - Ocean" width="100%" /> </a></div>
+                            </div>
+ 
+                            <div class="product-bottom"><a class="product-title"
+                                    href="https://aus.jolynclothing.com/products/harrison-top-ocean?variant=1261778075666">
+                                    Harrison Top - Ocean </a>
+ 
+                                    <div class="price-box">
+  
+                                        <p class="regular-product"><span>$45.00</span></p>
+                                </div>
+ 
+                                <a class="btn "
+                                    href="https://aus.jolynclothing.com/products/harrison-top-ocean?variant=1261778075666">
+                                    <span>Shop Now</span> </a>
+                            </div>
+ 
+                        </div>
+ 
+                    </div>
+ 
+                </div>
+ 
+                <div class="crop_image grid-item col-xs-6 col-sm-3">
+ 
+                    <div class="inner product-item  wow " data-wow-delay="40ms">
+ 
+                        <div class="inner-top">
+ 
+                            <div class="product-top">
+ 
+                                <div class="product-image"><a
+                                     
+                                    href="https://aus.jolynclothing.com/products/midl-bottom-ocean?variant=12588879708261"
+                                        class="product-grid-image"> <img
+                                            src="https://cdn.shopify.com/s/files/1/0703/0155/products/BALI-OCN-B_grande_c8419bc9-8d56-4abf-be4c-348f91401651_1024x1024.jpeg?v=1538977795"
+                                            alt="Midl Bottom - Ocean" width="100%" /> </a></div>
+                            </div>
+  
+                            <div class="product-bottom"><a class="product-title"
+                                    href="https://aus.jolynclothing.com/products/midl-bottom-ocean?variant=12588879708261">
+                                    Midl Bottom - Ocean </a>
+  
+                                    <div class="price-box">
+                                    <p class="regular-product"><span>$40.00</span></p>
+  
+                                </div>
+                                <a class="btn"
+                                    href="https://aus.jolynclothing.com/products/midl-bottom-ocean?variant=12588879708261">
+                                    <span>Shop Now</span> </a>
+                            </div>
+ 
+                        </div>
+ 
+                    </div>
+ 
+                </div>
+ 
+            </div>
+ 
+        </div>
+ 
+        <div class="section">
+
+            <div class="two_parts ">
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-6  img_part--one"><a
+                            href="https://aus.jolynclothing.com/collections/blues/onesies-1" target="_blank"
+                            rel="noopener noreferrer"> <img
+                                src="//cdn.shopify.com/s/files/1/0703/0155/files/onsea_left.jpg?v=1552885103"
+                                alt="" /></a></div>
+
+                                <div class=" col-xs-12 col-md-4 col-sm-6  text_one">
+
+                        <h2>Bring Life back</h2>
+
+                        <h3> to the beach with <br />     breathtakingly<br />      refreshing swimstyle</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+ 
+                    <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4 text_two">
+ 
+                        <h3>It all starts with you <br />and JOLYN;<br />a match made <br />in a sweet, <br /
+
+                            >sea-salty
+
+                        heaven.</h3>
+                        <br />
+  
+                        <h1>ADMIT IT</h1>
+  
+                    </div>
+  
+                    <div class="col-xs-12 col-sm-6 col-md-6  img_part--two"><a
+                            href="https://aus.jolynclothing.com/collections/printed/onesies-1" target="_blank"
+                            rel="noopener noreferrer"> <img
+                                src="https://cdn.shopify.com/s/files/1/0703/0155/files/onsea_right.png?2059" alt=""
+                                width="100%" /></a></div>
+                </div>
+  
+            </div>
+  
+            <div class="row">
+  
+                <div class="text_three col-xs-12 col-sm-offset-3 col-sm-6">
+  
+                    <h2>you're itching to try something new.</h2>
+  
+                </div>
+  
+            </div>
+  
+        </div>
+  
+        <div class="widget-product">
+  
+            <div class="products-grid row">
+  
+                <div class=" crop_image grid-item col-sm-offset-1 col-xs-6 col-sm-3">
+  
+                    <div class="inner product-item  wow" data-wow-delay="0ms" id="product-1213657605">
+  
+                        <div class="inner-top">
+  
+                            <div class="product-top">
+  
+                                <div class="product-image"><a
+                                        href="https://aus.jolynclothing.com/products/kai-fixed-back-onesie-navy?variant=45086379090"
+                                        class="product-grid-image"><img
+                                            src="https://cdn.shopify.com/s/files/1/0703/0155/products/SFW-070716-KAI-NAVY-F_grande_969b3f60-16b5-4303-ad37-1c3d097b8334_1024x1024.jpg?v=1510190653"
+                                            alt="Kai Fixed-Back Onesie - Navy " width="100%" /> </a></div>
+                            </div>
+   
+                            <div class="product-bottom"><a class="product-title"
+                                    href="https://aus.jolynclothing.com/products/kai-fixed-back-onesie-navy?variant=45086379090">
+                                    Kai Fixed-Back Onesie - Navy </a>
+                                <div class="price-box">
+                                    <p class="regular-product"><span>$90.00</span></p>
+                                </div>
+                                <a class="btn "
+                                    href="https://aus.jolynclothing.com/products/kai-fixed-back-onesie-navy?variant=45086379090">
+                                    <span>Shop Now</span> </a>
+   
+                                </div>
+   
+                            </div>
+   
+                        </div>
+   
+                    </div>
+   
+                    <div class=" crop_image grid-item col-xs-6 col-sm-3">
+
+                        <div class="inner product-item  wow " data-wow-delay="20ms" id="product-5951838021">
+
+                            <div class="inner-top">
+
+                                <div class="product-top">
+
+                                    <div class="product-image"><a
+                                        href="https://aus.jolynclothing.com/products/triangle-tops-hot-pink?variant=3830602629"
+                                        class="product-grid-image"> <img
+                                            src="https://cdn.shopify.com/s/files/1/0703/0155/products/SFW-jolyn-hot-pink-swim_1024x1024.jpeg?v=1511855830"
+                                            alt="Triangle Top - Hot Pink" width="100%" /> </a></div>
+
+                                        </div>
+
+                            <div class="product-bottom"><a class="product-title"
+                                    href="https://aus.jolynclothing.com/products/triangle-tops-hot-pink?variant=3830602629">
+                                    Triangle Top - Hot Pink </a>
+                                <div class="price-box">
+                                    <p class="regular-product"><span>$40.00</span></p>
+                                </div>
+   
+                                <a class="btn "
+   
+                                href="https://aus.jolynclothing.com/products/triangle-tops-hot-pink?variant=3830602629">
+                                    <span>Shop Now</span> </a>
+   
+                                </div>
+   
+                            </div>
+   
+                        </div>
+   
+                    </div>
+   
+                    <div class="crop_image grid-item col-xs-6 col-sm-3">
+   
+                        <div class="inner product-item  wow " data-wow-delay="40ms">
+   
+                            <div class="inner-top">
+   
+                                <div class="product-top">
+   
+                                    <div class="product-image"><a
+                                        href="https://aus.jolynclothing.com/products/printed-bali-bottom-mertail?variant=1648250060818"
+                                        class="product-grid-image"> <img
+                                            src="https://cdn.shopify.com/s/files/1/0703/0155/products/BALI-MERTAIL-S-021618_grande_189128ba-8a51-4a8d-b49e-a58b3ba2ba44_1024x1024.jpg?v=1519702363"
+                                            alt="Printed Bali Bottom - mertail" width="100%" /> </a></div>
+                            </div>
+   
+                            <div class="product-bottom"><a class="product-title"
+   
+                                href="https://aus.jolynclothing.com/products/printed-bali-bottom-mertail?variant=1648250060818">
+                                    Printed Bali Bottom - mertail </a>
+
+                                    <div class="price-box">
+                                    <p class="regular-product"><span>$40.00</span></p>
+
+                                </div>
+   
+                                <a class="btn"
+   
+                                href="https://aus.jolynclothing.com/products/printed-bali-bottom-mertail?variant=1648250060818">
+   
+                                <span>Shop Now</span> </a>
+   
+                            </div>
+   
+                        </div>
+   
+                    </div>
+   
+                </div>
+   
+            </div>
+   
+        </div>
+   
+        <div class="section-one row bottom_cta "><a class="last_cta">START HERE. START NOW</a></div>
+   
+        <div class="row"><a
+                href="https://aus.jolynclothing.com/collections/new-stuff%09%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20"
+                target="_blank" rel="noopener noreferrer">
+
+                <div class="s last_part ">
+
+                    <h3>Make 2019</h3>
+
+                    <h1>THE YEAR OF YOU</h1>
+
+                    <h3>and start shopping</h3>
+
+                </div>
+
+            </a></div>
+    </div>
+
+</body>
+
+</html>
